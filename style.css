@@ -24,7 +24,7 @@
 }
 .nav div {
     display: flex;
-    width: 90px;
+    width: auto;
     font-weight: bold;
     align-items: center;
     margin: 5px;
