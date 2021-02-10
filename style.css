@@ -10,7 +10,7 @@
     margin: auto;
 }
 top {
-    height: 200px;
+    height: auto;
     align-items:center;
     background:#ecf013;
 }
