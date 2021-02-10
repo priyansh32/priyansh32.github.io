@@ -19,9 +19,9 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    border: 10px solid #ecf013;
+    /* border: 10px solid #ecf013;
     border-bottom: none;
-    border-top: none;
+    border-top: none; */
 }
 .nav div {
     display: flex;
@@ -37,9 +37,13 @@
 }
 .main {
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     margin-top: 3px;
     background-color: tomato;
+}
+.Intro {
+    width: 70%;
+    margin: 10px;
 }
 a {
     text-decoration: none;
