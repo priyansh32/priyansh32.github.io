@@ -9,7 +9,7 @@
 }
 .flex-container > h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 100px;
+    font-size: 10vh;
     margin: auto;
 }
 .nav {
