@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <title>Hello!</title>
     <style>
        html{
@@ -12,13 +14,13 @@
         body{
             height: 98%;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             background-color: tomato;
             font-size: 100px;
             align-items: center;
             flex-wrap: wrap;
         }
-        div{
+        .main {
             padding: 10px;
             background: linear-gradient(to right,tomato,white);
             margin: auto;
@@ -27,11 +29,24 @@
             border-left: none;
             text-align: center;
         }
+        .footer {
+            /* border: black solid 2px; */
+            font-family: 'Indie Flower', cursive;
+            flex-wrap: nowrap;
+            border-right: none;
+            padding: 5px;
+            padding-right: 100px;
+            padding-left: 100px;
+            font-size: 15px;
+            line-height: 15px;
+			background: linear-gradient(to right,tomato,white,tomato);
+        }
     </style>
 </head>
 <body>
-    <div>
+    <div class="main">
          WORK UNDER<br>PROGRESS
     </div>
+    <div class="footer">Being made with 💗</div>
 </body>
 </html>
