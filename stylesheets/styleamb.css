@@ -19,7 +19,7 @@ body {
     z-index: 999;
 }
 header {
-    height: 150px;
+    /* height: 150px; */
     display: flex;
     align-items: center;
     font-size: 40px;
@@ -73,11 +73,11 @@ ul {
     /* border:solid red 2px; */
 }
 .intro {
-    position: relative;
-    left: 30%;
+    /* position: relative; */
+    /* left: 30%; */
     top: 10px;
-    width: 40%;
-    /* margin: auto; */
+    width: 400px;
+    margin: auto;
     margin-top: 20px;
     padding: 10px;
     text-align: center;
