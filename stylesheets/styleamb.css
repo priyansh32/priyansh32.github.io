@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+html,body {
+    height: 100%;
+}
+body {
+    background-image: url(bg.jpg);
+    background-attachment: fixed;
+}
+
+.contact {
+    display: inline-block;
+    position: fixed;
+    top: 2.5px;
+    right: 10px;
+    z-index: 999;
+}
+header {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    top: 0px;
+    /* background-color: tomato; */
+}
+header h1{
+    margin: auto;
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+.navigationbar {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-direction:row ;
+    margin-top: 0px;
+    height: 40px;
+    padding: 5px;
+    background-color: rgb(192, 192, 192,0.5);
+    border: rgb(255, 255, 255) 2px solid;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    height: 25px;
+    margin: auto;
+    margin-left: 10px;
+    align-items: center;
+    /* padding: 10px; */
+
+}
+.navigationbar li {
+    /* float: left; */
+    width: 100px;
+    height: 30px;
+    /* margin: 10px; */
+    text-align: center;
+    border: red 2px;
+    margin: auto;
+    line-height: 30px;
+}
+.navigationbar li:hover {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    /* border:solid red 2px; */
+}
+.intro {
+    position: relative;
+    left: 30%;
+    top: 10px;
+    width: 40%;
+    /* margin: auto; */
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(214, 214, 214,0.3);
+    color: white;
+}
+.intro p {
+    display: block;
+    width: 100%;
+    margin: auto;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+}
+.intro:hover{
+    background-color: rgb(221, 227, 233);
+    color:black;
+}
