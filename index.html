@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
     <title>Hello!</title>
     <style>
         *{
@@ -13,8 +14,10 @@
         }
        html{
            height: 100%;
-       } 
+        } 
         body{
+            background-image: url(images/bgmain.jpg);
+            background-repeat: no-repeat;
             height: 100%;
             display: flex;
             flex-direction: column;
@@ -23,17 +26,20 @@
             flex-wrap: wrap;
         }
         .main {
-            border-radius: 0px 20px 20px 0px;
+            /* border-radius: 0px 20px 20px 0px; */
             display:inline-block;
             position: absolute;
+            font-family:'Architects Daughter', cursive;
             top: 30%;
             padding: 10px;
-            background: linear-gradient(to right,tomato,white);
+            /* background: linear-gradient(to top,tomato,rgb(236, 93, 93),tomato); */
+            /* background-image: url(images/bgmain.jpg); */
             /* margin: auto; */
             font-size: 100px;
-            color: black;
-            border: black solid 5px;
-            border-left: none;
+            color: tomato;
+            /* border: grey 10px; */
+            /* border-style:outset; */
+            /* border-left: none; */
             text-align: center;
             align-self: center;
         }
@@ -48,10 +54,11 @@
             padding: 5px;
             padding-right: 100px;
             padding-left: 100px;
-            font-size: 15px;
+            font-size: 30px;
             align-self: center;
-            line-height: 15px;
-			background: linear-gradient(to right,tomato,white,tomato);
+            line-height: 30px;
+            color: tomato;
+			/* background: linear-gradient(to right,tomato,white,tomato); */
         }
         header {
             border-radius: 20px;

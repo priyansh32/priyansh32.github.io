@@ -5,54 +5,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Before and after pseudo selector</title>
+    <title>Ramsey Auto Garage</title>
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
     <style>
-        body {
+        *{  
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            background-color: black;
+        }
+        body {
+            /* background-color: black; */
             color: white;
         }
 
-        header::before{
-            background: url('https://source.unsplash.com/1600x900/?programming,coding,web') no-repeat center center/cover;
+        header::before {
+            position: fixed;
+            background: url(images/backbg.jpg) no-repeat center center/cover;
             content: "";
-            position: absolute;
-            top:0;
+            /* position: absolute; */
+            top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             z-index: -1;
-            opacity: 0.3;
+            /* opacity: 0.5; */
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
         }
 
         .navigation {
+            margin-top: 10px;
             font-family: 'Bree Serif', serif;
             font-size: 20px;
             display: flex;
+            background-color: rgba(22, 22, 21, 0.658);
         }
 
         li {
             list-style: none;
-            padding: 20px 23px;
+            margin: 0px 0px 0px 10px;
+            padding: 15px 23px;
+            border:4px solid transparent;
         }
-
+        li:hover {
+            background-color: black;
+        }
+        #item-1:hover{
+            border:4px solid rgb(255, 13, 5);
+            box-shadow: 0px 0px 30px rgb(255, 13, 5);
+        }
+        #item-2:hover{
+            border:4px solid rgb(5, 255, 59);
+            box-shadow: 0px 0px 30px rgb(5, 255, 59);
+        }
+        #item-3:hover{
+            border:4px solid rgb(251, 255, 5);
+            box-shadow: 0px 0px 30px rgb(251, 255, 5);
+        }
+        #item-4:hover{
+            border:4px solid rgb(5, 226, 255);
+            box-shadow: 0px 0px 30px rgb(5, 226, 255);
+        }
         section {
             /* height: 344px; */
+            padding: 35px 0px;
+            width: 60%;
             font-family: 'Bree Serif', serif;
-            margin: 3px 230px;
+            margin: auto;
+            margin-top: 30px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            border: 5px solid white;
+            /* border: 5px solid white; */
+            /* border-radius: 50% 50% 0% 0%; */
+            box-shadow: 0px 28px 90px blue;
+            background-color: rgb(0, 0, 0, 0.4);
         }
 
         h1 {
-            font-size: 4rem;
-            padding: 0px;
-            text-shadow: 2px 5px 5px blue;
+            color: rgb(255, 253, 253);
+            font-size: 5rem;
+            padding: 45px;
+            /* text-shadow: 2px 5px 5px blue; */
         }
 
         p {
@@ -62,7 +100,30 @@
         /* section::after{
         content:"this is a content"
     } */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            align-items: center;
+            justify-content: center;
+            top: 125px;
+            right: 10px;
+            width: 70px;
+            border-right: white solid 1px;
+            /* height: 50vh; */
+            /* border: white solid 5px; */
+        }
 
+        .sidebar img {
+            width: 50px;
+            height: 50px;
+            margin: 10px 0px 0px 10px;
+        }
+        .sidebar img:hover{
+            width: 55px;
+            height: 55px;
+            margin: 5px 0px 0px 5px;
+        }
     </style>
 </head>
 
@@ -70,20 +131,33 @@
     <header>
         <nav class="navbar">
             <ul class="navigation">
-                <li class="item">Home</li>
-                <li class="item">About</li>
-                <li class="item">Services</li>
-                <li class="item">Contact Us</li>
+                <a href="#">
+                    <li class="item"id="item-1">Home</li>
+                </a>
+                <a href="#">
+                    <li class="item"id="item-2">About</li>
+                </a>
+                <a href="#">
+                    <li class="item"id="item-3">Services</li>
+                </a>
+                <a href="#">
+                    <li class="item"id="item-4">Contact Us</li>
+                </a>
             </ul>
         </nav>
     </header>
-        <section>
-            <h1> Welcome to Coding World</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident error ratione doloribus sed dolorum,
+    <section>
+        <h1>Ramsey Auto Garage</h1>
+        <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident error ratione doloribus sed dolorum,
                 ipsum cumque reprehenderit dignissimos architecto veniam optio sint aliquam consectetur corrupti vero
-                similique velit. Possimus eum consequatur delectus quia magni.</p>
-        </section>
-       
+                similique velit. Possimus eum consequatur delectus quia magni.</p> -->
+    </section>
+    <div class="sidebar">
+        <a href="#"><img src="images/insta.png" alt=""></a>
+        <a href="#"><img src="images/fb2.png" alt=""></a>
+        <a href="https://wa.link/mhfabs" target="_blank"><img src="images/wp.png" alt=""></a>
+    </div>
+
 </body>
 
 </html>
