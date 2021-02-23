@@ -220,11 +220,17 @@ content:"this is a content"
         width:80vw;
     }
     .item:hover{
+        background: linear-gradient(to right,black,white);
+    }
+    #item-1:hover, #item-2:hover,#item-3:hover,#item-4:hover{
+        border:4px solid transparent;
+        border-left: 4px solid rgb(255, 0, 0);
+        border-right: none;
         box-shadow: none;
-        border:none;
     }
     .sidebar{
         top: 60px;
+        right: 1px;
     }
     .sidebar img {
         width: 35px;
