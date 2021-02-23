@@ -6,164 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ramsey Auto Garage</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Caveat:wght@500&family=Fjalla+One&family=Reggae+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
-    <style>
-        *{  
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            background-color: black;
-            color: white;
-        }
-
-        header::before {
-            position: fixed;
-            background: url(images/backbg.jpg) no-repeat center center/cover;
-            content: "";
-            /* position: absolute; */
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            opacity: 0.5;
-        }
-
-        a {
-            text-decoration: none;
-            color: white;
-        }
-
-        .navigation {
-            margin-top: 10px;
-            font-family: 'Bree Serif', serif;
-            font-size: 20px;
-            display: flex;
-            background-color: rgba(22, 22, 21, 0.658);
-        }
-
-        li {
-            list-style: none;
-            text-align: center;
-            width: 150px;
-            margin: 0px;
-            padding: 15px 23px;
-            border:4px solid transparent;
-        }
-        li:hover {
-            background-color: black;
-        }
-        #item-1{
-            margin-left: 10px;
-        }
-        #item-1:hover{
-            border:4px solid rgb(255, 13, 5);
-            box-shadow: 0px 0px 30px rgb(255, 13, 5);
-        }
-        #item-2:hover{
-            border:4px solid rgb(5, 255, 59);
-            box-shadow: 0px 0px 30px rgb(5, 255, 59);
-        }
-        #item-3:hover{
-            border:4px solid rgb(251, 255, 5);
-            box-shadow: 0px 0px 30px rgb(251, 255, 5);
-        }
-        #item-4:hover{
-            border:4px solid rgb(5, 226, 255);
-            box-shadow: 0px 0px 30px rgb(5, 226, 255);
-        }
-        section {
-            /* height: 344px; */
-            padding: 35px 0px;
-            width: 60%;
-            font-family: 'Bree Serif', serif;
-            margin: auto;
-            margin-top: 30px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            /* border: 5px solid white; */
-            /* border-radius: 50% 50% 0% 0%; */
-            box-shadow: 0px 28px 90px blue;
-            background-color: rgb(0, 0, 0, 0.4);
-        }
-
-        h1 {
-            color: rgb(255, 253, 253);
-            font-size: 5rem;
-            padding: 45px;
-            text-align: center;
-            /* text-shadow: 2px 5px 5px blue; */
-        }
-
-        p {
-            text-align: center;
-        }
-
-        /* section::after{
-        content:"this is a content"
-    } */
-        .sidebar {
-            display: flex;
-            flex-direction: column;
-            position: fixed;
-            align-items: center;
-            justify-content: center;
-            top: 125px;
-            right: 10px;
-            width: 70px;
-            border-right: white solid 1px;
-            /* height: 50vh; */
-            /* border: white solid 5px; */
-        }
-
-        .sidebar img {
-            width: 50px;
-            height: 50px;
-            margin: 15px 0px 0px 15px;
-        }
-        .sidebar img:hover{
-            width: 60px;
-            height: 60px;
-            margin: 5px 0px 0px 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="stylepseudo.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar">
-            <ul class="navigation">
-                <a href="#">
-                    <li class="item"id="item-1">Home</li>
+        <nav class="navigation">
+            <img src="images/logo garage nav.png" id="logo" alt="">
+            <ul class="nav">
+                <a href=" #">
+                    <li class="item" id="item-1">Home</li>
                 </a>
                 <a href="#">
-                    <li class="item"id="item-2">About</li>
+                    <li class="item" id="item-2">About</li>
                 </a>
                 <a href="#">
-                    <li class="item"id="item-3">Services</li>
+                    <li class="item" id="item-3">Services</li>
                 </a>
                 <a href="#">
-                    <li class="item"id="item-4">Contact Us</li>
+                    <li class="item" id="item-4">Contact Us</li>
                 </a>
             </ul>
         </nav>
     </header>
-    <section>
+    <!-- <section>
         <h1>Ramsey Auto Garage</h1>
-        <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident error ratione doloribus sed dolorum,
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident error ratione doloribus sed dolorum,
                 ipsum cumque reprehenderit dignissimos architecto veniam optio sint aliquam consectetur corrupti vero
-                similique velit. Possimus eum consequatur delectus quia magni.</p> -->
-    </section>
+                similique velit. Possimus eum consequatur delectus quia magni.</p> 
+    </section>  -->
     <div class="sidebar">
         <a href="#"><img src="images/insta.png" alt=""></a>
         <a href="#"><img src="images/fb2.png" alt=""></a>
         <a href="https://wa.link/mhfabs" target="_blank"><img src="images/wp.png" alt=""></a>
     </div>
-
+    <!-- <div class="content">
+        <h2>Our Motivation</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis corporis saepe nisi eius veritatis
+            nostrum sit earum, nihil expedita fugit fuga iste explicabo laudantium ducimus, ab facere laboriosam error
+            dolorem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quisquam?</p>
+    </div> -->
+    <div class="intro">
+        <img src="images/logo garage.png" alt="">
+       <h2 style="text-align: center; font-family: 'Fjalla One', sans-serif;">EXPERT TECHNICIANS & COMPETITIVE PRICES</h2>
+       <p>We are committed to earning your trust by providing the expertise and value you expect.</p>
+    </div>
+    <div class="choose">
+        <h2>WHY CHOOSE US?</h2>
+        <hr style="width: 20%; align-self: center;">
+        <p>We are one of the leading auto repair shops serving customers in Tucson.<br>
+            All mechanic services are performed by highly qualified mechanics.</p>
+    </div>
+    <footer>
+        <address>
+            123 Main Street,
+            New York,
+            NY 10030
+        </address>
+    </footer>
 </body>
 
 </html>
