@@ -252,11 +252,15 @@ footer{
         margin-left: 0px;
     }
     .last3{
-        width: 100vw;
+        width: 50vw;
+        /* justify-content: center; */
     }
     .last3 img{
         width: 50px
-    };
+    }
+    .last3 p{
+        font-size: 15px;
+    }
     .sidebar{
         top: 60px;
         right: 1px;
