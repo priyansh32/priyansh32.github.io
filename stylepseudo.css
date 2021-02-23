@@ -223,4 +223,17 @@ content:"this is a content"
     .sidebar{
         top: 30px;
     }
+    .sidebar img {
+        width: 20px;
+        height: 20px;
+        margin: 5px 0px 0px 5px;
+    }
+    .sidebar img:hover{
+        width: 25px;
+        height: 20px;
+        margin: 0px 0px 0px 0px;
+    }
+    .navigation{
+        margin-top: 0px;
+    }
 } 
