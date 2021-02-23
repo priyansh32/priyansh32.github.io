@@ -68,6 +68,7 @@ body {
     align-items: center;
     width: 400px;
     height: 300px;
+    font-size: 17px;
     /* border: solid black 2px; */
     margin: 10px;
 }
@@ -247,7 +248,8 @@ footer{
         justify-content: center;
     }
     .next{
-        height: 260px;
+        width: 100vw;
+        height: 200px;
         margin-right: 0px;
         margin-left: 0px;
     }
