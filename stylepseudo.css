@@ -44,6 +44,9 @@ body {
     font-size: 25px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+.choose h2::first-letter{
+    font-size: 60px;
+}
 .choose p{
     padding: 20px;
 }
@@ -83,6 +86,14 @@ header{
     flex-wrap: wrap;
     background-color: rgb(255, 255, 255);
 }
+@media (max-width:600px) {
+    .item{
+        width:100vw;
+    }
+    .sidebar{
+        top:10px;
+    }
+} 
 ul{
     display: flex;
     flex-direction: row;
@@ -161,9 +172,8 @@ content:"this is a content"
     top: 125px;
     right: 10px;
     width: 70px;
-    /* background: white; */
-    
-    border-right: black solid 1px;
+    /* background: white; */ 
+    border-right: white solid 3px;
     /* height: 50vh; */
     /* border: white solid 5px; */
 }
