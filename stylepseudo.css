@@ -209,14 +209,17 @@ p {
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 .last3 img{
+    display: inline-block;
     width: 100px;
+    position: relative;
+    right: 0px;
 }
 .last3 p{
     display: inline-block;
-    padding: 30px;
+    padding: 13px;
     font-size: 25px;
 }
 footer{
@@ -245,9 +248,9 @@ footer{
         margin-right: 0px;
         margin-left: 0px;
     }
-    /* .last3{
+    .last3{
         width: 100vw;
-    } */
+    }
     .sidebar{
         top: 60px;
         right: 1px;
