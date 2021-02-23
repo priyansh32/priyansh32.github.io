@@ -242,10 +242,12 @@ footer{
     }
     .next{
         height: 260px;
+        margin-right: 0px;
+        margin-left: 0px;
     }
-    .last3{
+    /* .last3{
         width: 100vw;
-    }
+    } */
     .sidebar{
         top: 60px;
         right: 1px;
