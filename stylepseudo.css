@@ -86,14 +86,6 @@ header{
     flex-wrap: wrap;
     background-color: rgb(255, 255, 255);
 }
-@media (max-width:600px) {
-    .item{
-        width:100vw;
-    }
-    .sidebar{
-        top:10px;
-    }
-} 
 ul{
     display: flex;
     flex-direction: row;
@@ -224,3 +216,11 @@ content:"this is a content"
     flex-direction: row;
     flex-wrap: wrap;
 }
+@media (max-width:600px) {
+    .item{
+        width:100vw;
+    }
+    .sidebar{
+        top: 30px;
+    }
+} 
