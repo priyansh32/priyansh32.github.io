@@ -243,6 +243,9 @@ footer{
         border-right: none;
         box-shadow: none;
     }
+    .ending{
+        justify-content: center;
+    }
     .next{
         height: 260px;
         margin-right: 0px;
@@ -251,6 +254,9 @@ footer{
     .last3{
         width: 100vw;
     }
+    .last3 img{
+        width: 50px
+    };
     .sidebar{
         top: 60px;
         right: 1px;
