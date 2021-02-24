@@ -225,7 +225,7 @@ p {
 }
 footer{
     
-    height: 70px;
+    height: 40px;
     text-align: center;
     padding: 30px;
     color: black;
@@ -246,6 +246,7 @@ footer{
     }
     .ending{
         justify-content: center;
+        height: 300px;
     }
     .next{
         width: 100vw;
@@ -255,6 +256,7 @@ footer{
     }
     .last3{
         width: 90vw;
+        height:50px;
         /* justify-content: center; */
     }
     .last3 img{
