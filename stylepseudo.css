@@ -98,7 +98,7 @@ header{
     font-family: 'Bree Serif', serif;
     font-size: 20px;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     flex-wrap: wrap;
     background-color: rgba(48, 45, 45, 0.24);
 }
@@ -172,11 +172,8 @@ p {
     margin: 5px 0px 0px 5px;
 }
 #logo {
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 10px;
-    width: 150px;
+    width: 160px;
+    margin-right: 20px;
 }
 .nav{
     display: flex;
@@ -260,10 +257,6 @@ footer{
     }
     .intro{
         height: 400px;
-    }
-    #logo{
-        position: relative;
-        /* justify-self: flex-end; */
     }
     .ending{
         justify-content: center;
