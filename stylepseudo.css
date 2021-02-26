@@ -318,7 +318,7 @@ footer{
     }
     .sidebar{
         flex-direction: row-reverse;
-        top: 10px;
+        top: 5px;
         right: 5px;
         width: auto;
     }
