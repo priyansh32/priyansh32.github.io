@@ -37,12 +37,14 @@ body {
     color: black;
     display: flex;
     flex-direction: column;
-    background:rgb(235, 231, 231);
+    /* background:rgb(235, 231, 231); */
+    background:#e2d0a8;
     /* margin-top: 20px; */
     /* height: 500px; */
     /* justify-content: center; */
     align-items: center;
     padding: 20px;
+    padding-bottom: 0px;
     font-size: 25px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -214,7 +216,7 @@ p {
 .car{
     overflow: hidden;
 }
-#movecar{
+.movecar{
     position: relative;
     height: 178px;
     width: 396px;
@@ -230,6 +232,24 @@ p {
     }
     to{
         left:102vw;
+    }
+}
+.movecar2{
+    position: relative;
+    height: 178px;
+    width: 396px;
+    left: 100vw;
+    bottom: -6px;
+    animation-name: movcar2;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes movcar2{
+    from{
+        left:100vw;
+    }
+    to{
+        left:-396px;
     }
 }
 footer{
@@ -253,7 +273,7 @@ footer{
         border-right: none;
         box-shadow: none;
     }
-    #movecar{
+    .car{
         display: none;
     }
     .intro{
@@ -270,7 +290,7 @@ footer{
         margin-left: 0px;
     }
     .last3{
-        width: 90vw;
+        width: 80vw;
         height:50px;
         /* justify-content: center; */
     }
