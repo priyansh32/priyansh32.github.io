@@ -321,6 +321,7 @@ footer{
         top: 5px;
         right: 5px;
         width: auto;
+        z-index: 5;
     }
     .sidebar img {
         width: 35px;
