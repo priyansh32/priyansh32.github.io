@@ -223,7 +223,7 @@ p {
     left: -396px;
     bottom: -56px;
     animation-name: movcar;
-    animation-duration: 8s;
+    animation-duration: 11s;
     animation-iteration-count: infinite;
 }
 @keyframes movcar{
