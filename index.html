@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylepseudo.css">
+    <!-- <script src="new.js"></script> -->
 </head>
 
 <body>
@@ -22,35 +23,40 @@
         <a href="https://wa.link/po2n64" target="_blank"><img src="images/wp.png" alt=""></a>
     </div>
     <div class="back">
-    <header>
-        <nav class="navigation">
-            <img src="images/logo garage.png" id="logo" alt=""><br>
-            <ul class="nav">
-                <a href="#">
-                    <li class="item" id="item-1"><span class="arrow">▷ </span>Home</li>
-                </a>
-                <a href="#">
-                    <li class="item" id="item-2"><span class="arrow">▷ </span>About</li>
-                </a>
-                <a href="#">
-                    <li class="item" id="item-3"><span class="arrow">▷ </span>Services</li>
-                </a>
-                <a href="#">
-                    <li class="item" id="item-4"><span class="arrow">▷ </span>Contact Us</li>
-                </a>
-            </ul>
-        </nav>
-    </header>
-    <div class="intro">
-        <img src="images/logo garage.png" id="image"alt="">
-        <h2 style="text-align: center; font-family: 'Fjalla One', sans-serif;">THE DOCTOR, FOR YOUR CAR
-        </h2>
-        <p>We are committed to earning your trust by providing the expertise and value you expect.</p>
+        <header>
+            <nav class="navigation">
+                <img src="images/logo garage.png" id="logo" alt=""><br>
+                <div class="menu" onclick="togglemenu()">
+                    <div class="ham"></div>
+                    <div class="ham"></div>
+                    <div class="ham"></div>
+                </div>
+                <ul id="nav">
+                    <a href="#">
+                        <li class="item" id="item-1"><span class="arrow">▷ </span>Home</li>
+                    </a>
+                    <a href="#">
+                        <li class="item" id="item-2"><span class="arrow">▷ </span>About</li>
+                    </a>
+                    <a href="#">
+                        <li class="item" id="item-3"><span class="arrow">▷ </span>Services</li>
+                    </a>
+                    <a href="#">
+                        <li class="item" id="item-4"><span class="arrow">▷ </span>Contact Us</li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+        <div class="intro">
+            <img src="images/logo garage.png" id="image" alt="">
+            <h2 style="text-align: center; font-family: 'Fjalla One', sans-serif;">THE DOCTOR, FOR YOUR CAR
+            </h2>
+            <p>We are committed to earning your trust by providing the expertise and value you expect.</p>
+        </div>
+        <div class="car">
+            <img src="images/giphy.gif" class="movecar" alt="">
+        </div>
     </div>
-    <div class="car">
-        <img src="images/giphy.gif" class="movecar"alt="">
-    </div>
-</div>
     <div class="choose">
         <h2 style="width: 100%; text-align: center;">WHY CHOOSE US?</h2>
         <hr style="width: 20%; align-self: center;">
@@ -75,27 +81,42 @@
         </div>
     </div>
     <div class="car" style="width: 100%; background-color: #e2d0a8;">
-        <img src="images/newgif.gif" class="movecar2"alt="">
+        <img src="images/newgif.gif" class="movecar2" alt="">
     </div>
     <div class="ending">
         <div class="last3">
             <img src="images/last1.png" alt="">
-            <iframe class="last3" id="map"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3629.9852628888543!2d75.17674371490185!3d22.073089285442066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39620f0ca46e195b%3A0x7cc34b6b5100c3a7!2sMahesh%20Patidar!5e1!3m2!1sen!2sin!4v1614157867469!5m2!1sen!2sin" width="250" height="225" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe class="last3" id="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3629.9852628888543!2d75.17674371490185!3d22.073089285442066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39620f0ca46e195b%3A0x7cc34b6b5100c3a7!2sMahesh%20Patidar!5e1!3m2!1sen!2sin!4v1614157867469!5m2!1sen!2sin"
+                width="250" height="225" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-        <a href="tel:+916261510010"><div class="last3">
-            <img src="images/last2.png" alt="">
-            <p>Feel Free to call us<br>
-            +91 6261510010</p>
-        </div></a>
+        <a href="tel:+916261510010">
+            <div class="last3">
+                <img src="images/last2.png" alt="">
+                <p>Feel Free to call us<br>
+                    +91 6261510010</p>
+            </div>
+        </a>
         <div class="last3">
             <img src="images/last3.png" alt="">
             <p style="text-align: left;">24/7 Roadside Assitance<br>
-            +91 6261510010</p>
+                +91 6261510010</p>
         </div>
     </div>
     <footer>
         &#169;Copyright 2021, Designed By Priyansh
     </footer>
+    <script>
+        let nav = document.getElementById('nav');
+        function togglemenu() {
+            if(nav.style.display == 'none'){
+            nav.style.display = 'flex';
+            }
+            else{
+                nav.style.display='none';
+            }
+        }
+    </script>
 </body>
 
 </html>

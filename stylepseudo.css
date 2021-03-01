@@ -87,7 +87,18 @@ a {
     text-decoration: none;
     color: white;
 }
-
+.menu{
+    display: none;
+    width: 100vw;
+    padding: 10px 10px;
+    background-color: black;
+}
+.ham {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+  }
 .navigation {
     /* border: white 2px solid; */
     /* border-right: none; */
@@ -177,7 +188,7 @@ p {
     height: 53.2px;
     margin-right: 20px;
 }
-.nav{
+#nav{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -263,6 +274,9 @@ footer{
     display: none;
 }
 @media (max-width:800px){
+    .menu{
+        display: block;
+    }
     .arrow{
         display: inline;
     }
@@ -286,6 +300,10 @@ footer{
     .navigation{
         margin-top: 0px;
         flex-direction: row;
+    }
+    #nav{
+        display: none;
+        background-color: rgb(34, 33, 33);
     }
     .sidebar{
         top: 35px;
@@ -349,3 +367,8 @@ footer{
         width: 100vw;
     }
 } 
+@media (max-width:276px){
+    #image{
+        display: none;
+    }
+}
