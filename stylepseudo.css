@@ -87,11 +87,11 @@ a {
     text-decoration: none;
     color: white;
 }
-.menu{
+#menu{
     display: none;
     width: 100vw;
     padding: 10px 10px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.349);
 }
 .ham {
     width: 35px;
@@ -274,7 +274,7 @@ footer{
     display: none;
 }
 @media (max-width:800px){
-    .menu{
+    #menu{
         display: block;
     }
     .arrow{
@@ -303,7 +303,7 @@ footer{
     }
     #nav{
         display: none;
-        background-color: rgb(34, 33, 33);
+        background-color: rgba(34, 33, 33, 0.418);
     }
     .sidebar{
         top: 35px;

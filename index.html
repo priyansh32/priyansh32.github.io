@@ -26,7 +26,7 @@
         <header>
             <nav class="navigation">
                 <img src="images/logo garage.png" id="logo" alt=""><br>
-                <div class="menu" onclick="togglemenu()">
+                <div id="menu" onclick="togglemenu()">
                     <div class="ham"></div>
                     <div class="ham"></div>
                     <div class="ham"></div>
@@ -107,13 +107,16 @@
         &#169;Copyright 2021, Designed By Priyansh
     </footer>
     <script>
+        let menu = document.getElementById('menu');
         let nav = document.getElementById('nav');
         function togglemenu() {
             if(nav.style.display == 'none'){
             nav.style.display = 'flex';
+            menu.style.background = 'black';
             }
             else{
                 nav.style.display='none';
+                menu.style.backgroundColor = 'rgba(0, 0, 0, 0.349)';
             }
         }
     </script>
