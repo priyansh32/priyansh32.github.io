@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    body {
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .container {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 200px 200px 200px;
+        background-color: black;
+        grid-gap: 10px;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .box {
+        background-color: salmon;
+        font-size: 150px;
+        text-align: center;
+    }
+
+    .cross {
+        display: none;
+    }
+
+    #cross {
+        display: none;
+        height: 100%;
+    }
+
+    #circle {
+        display: none;
+        height: 100%;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="box row1" onclick="disp()"><span id="cross">✖</span><span id="circle">⚫</span></div>
+        <div class="box row2"><span class="cross">✖</span></div>
+        <div class="box col1"><span class="cross">✖</span></div>
+        <div class="box col2"><span class="cross">✖</span></div>
+        <div class="box col2"><span class="cross">✖</span></div>
+        <div class="box col2"><span class="cross">✖</span></div>
+        <div class="box col2"><span class="cross">✖</span></div>
+        <div class="box col2"><span class="cross">✖</span></div>
+        <div class="box col2"><span class="cross">✖</span></div>
+    </div>
+    <script>
+        let cross = document.getElementById('cross')
+        var i = 1;
+        var j = 1;
+        function disp() {
+            if (i % 2 == 0) {
+                cross.style.display = 'block';
+                circle.style.display = 'none';
+            }
+            else {
+                circle.style.display = 'block';
+                cross.style.display = 'none';
+            }
+            if (j == 0) {
+                circle.style.display = 'none';
+                cross.style.display = 'none';
+            }
+            i++;
+        }
+    </script>
+</body>
+
+</html>
