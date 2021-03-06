@@ -23,14 +23,17 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 35px;
-    animation: fadein 1s ease-in;
+    animation: fadein 1s ease-in-out;
+    /* transform: translate(0px,0px); */
 }
 @keyframes fadein{
     from{
         opacity: 0;
+        transform: translate(0px,50px);
     }
     to{
         opacity: 1;
+        transform: translate(0px,0px);
     }
 }
 .intro img{

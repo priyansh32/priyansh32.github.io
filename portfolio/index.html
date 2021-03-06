@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../stylesheets/style.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            background: black;
+            color: white;
+            font-family: 'Bree Serif', serif;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 233.6px;
+            height: 73px;
+            margin-right: 20px;
+        }
+
+        body::before {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            content: "HEY";
+            color: black;
+            font-size: 100px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background: white;
+            height: 100%;
+            width: 100%;
+            z-index: 100;
+            animation: shutter 3s ease-in-out forwards;
+            animation-delay: 300ms;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            /* border-bottom: red solid 10px; */
+        }
+
+        @keyframes shutter {
+            0% {
+                transform: translate(0px, -60px);
+                /* opacity: 1; */
+            }
+
+            100% {
+                transform: translate(0px, -100%);
+                /* opacity: 0; */
+            }
+        }
+
+        .navigation {
+            margin-top: 0px;
+            font-family: 'Bree Serif', serif;
+            font-size: 20px;
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            background-color: rgb(48, 45, 45, 0.4);
+            height: 100px;
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: center;
+        }
+
+        .sidebar img {
+            width: 25px;
+            height: 25px;
+            margin: 15px 0px 0px 15px;
+        }
+
+        .sidebar img:hover {
+            width: 35px;
+            height: 35px;
+            margin: 5px 0px 0px 5px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50vh;
+        }
+
+        /* .container h1 {
+            width: 20vw;
+
+        } */
+
+        footer {
+            position: absolute;
+            bottom: 0px;
+            align-self: flex-end;
+            height: 50px;
+            width: 100vw;
+            text-align: center;
+            padding: 13px;
+            color: black;
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+    <title>Priyansh Patidar</title>
+</head>
+<header>
+    <nav class="navigation">
+        <a href="#"><img src="../images/name.png" id="logo" alt=""></a><br>
+        <div class="sidebar">
+            <a href="#"><img src="../images/insta.png" alt=""></a>
+            <a href="#"><img src="../images/github.png" alt=""></a>
+            <a href="https://wa.link/po2n64" target="_blank"><img src="../images/wp.png" alt=""></a>
+            <a href="mailto: patidar.priyansh936@gmail.com"><img src="../images/Gmail-logo.png" alt=""></a>
+        </div>
+
+    </nav>
+</header>
+<div class="container">
+    <h1 id="typewrite"></h1>
+</div>
+<footer>
+    &#169;Copyright 2021, Designed By Priyansh
+</footer>
+<script>
+    var i = -1;
+    var tw = document.getElementById('typewrite');
+    var txt = ['Lorem Ipsum ', 'Lorem Ipsum']; /* The text */
+    var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+    function typeWriter(){
+        if (i < 2) 
+        {
+            var j = 0;
+            function pri() 
+            {
+                if (j < txt[i].length)
+                {
+                    tw.innerHTML += txt[i].charAt(j);
+                    j++;
+                    setTimeout(pri, speed);
+                }
+            }
+            i++;
+            setTimeout(typeWriter,500);
+            return pri();
+        }
+    }
+</script>
+
+<body>
+</body>
+
+</html>
