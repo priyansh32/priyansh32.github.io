@@ -153,21 +153,23 @@
     var txt = ['Lorem Ipsum ', 'Lorem Ipsum']; /* The text */
     var speed = 50; /* The speed/duration of the effect in milliseconds */
 
-    function typeWriter(){
-        if (i < 2) 
-        {
+    function typeWriter() {
+        if (i < 2) {
             var j = 0;
-            function pri() 
-            {
-                if (j < txt[i].length)
-                {
+
+            function pri() {
+                while (j < txt[i].length) {
                     tw.innerHTML += txt[i].charAt(j);
                     j++;
-                    setTimeout(pri, speed);
+                    setTimeout(() => {
+
+                    }, 500);
                 }
             }
+
             i++;
-            setTimeout(typeWriter,500);
+            setTimeout(() => {
+            }, 500);
             return pri();
         }
     }

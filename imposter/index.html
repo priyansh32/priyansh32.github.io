@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imposter</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        html{
+            height: 100p;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url(../images/nightsky.jpg);
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .container {
+            display: block;
+            position: absolute;
+            top: 0px;
+            height: 500px;
+            width: 500px;
+            /* background-color: rgb(47, 47, 47); */
+            /* overflow: auto; */
+        }
+
+        .back {
+            position: absolute;
+            top: 80px;
+            left: 115px;
+            width: 356px;
+            height: 470px;
+            border-radius: 31% 58% 0% 0%/47% 30% 0% 0%;
+            border: solid black 23px;
+            border-bottom: none;
+            background-color: #0a8f9f;
+        }
+
+        .leg {
+            position: absolute;
+            top: 442px;
+            width: 150px;
+            height: 150px;
+            border: solid black 23px;
+            border-top: none;
+            background-color: #0a8f9f;
+        }
+
+        #leg1 {
+            left: -23px;
+            border-radius: 0% 0% 31% 58%/ 0% 0% 47% 30%;
+        }
+
+        #leg2 {
+            left: 183px;
+            height: 130px;
+            border-radius: 0% 0% 31% 58%/ 0% 0% 47% 30%;
+
+        }
+
+        .borderbottom {
+            position: absolute;
+            top: 442px;
+            left: 110px;
+            background-color: rgb(0, 0, 0);
+            height: 27px;
+            width: 118px;
+            border-radius: 25%;
+        }
+
+        .head {
+            top: 0px;
+            right: 0px;
+            position: absolute;
+            border-radius: 29% 60% 38% 39% / 58% 38% 44% 59%;
+            background-color: #0df5ed;
+            height: 400px;
+            width: 308px;
+        }
+
+        .bag {
+            height: 300px;
+            width: 120px;
+            background-color: #0df5ed;
+            position: absolute;
+            top: 120px;
+            left: -121px;
+            border: solid black 25px;
+            border-radius: 100% 68% 50% 73% / 28% 0% 0% 75% ;
+        }
+
+        .nose {
+            top: 70px;
+            left: 56px;
+            position: absolute;
+            border-radius: 29% 68% 38% 39% / 58% 44% 44% 59%;
+            background-color: #4e636b;
+            height: 197px;
+            width: 315px;
+            border: solid black 25px;
+            transform: rotate(-5deg);
+        }
+
+        .nose1 {
+            position: absolute;
+            right: 0px;
+            border-radius: 20% 72% 50% 73% / 28% 57% 27% 75%;
+            background-color: #9dc6d7;
+            height: 111px;
+            width: 217px;
+        }
+
+        .nose2 {
+            position: absolute;
+            top: 17px;
+            right: 18px;
+            border-radius: 42% 87% 61% 90% / 58% 77% 44% 75%;
+            background-color: #ffffff;
+            height: 38px;
+            transform: rotate(8deg);
+            width: 99px;
+        }
+        .end{
+            align-self: flex-end;
+            justify-self: center;
+            bottom: 0px;
+            padding-left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="back">
+            <div class="bag"></div>
+            <div class="head">
+                <div class="nose">
+                    <div class="nose1">
+                        <div class="nose2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="leg" id="leg1"></div>
+                <div class="leg" id="leg2"></div>
+                <div class="borderbottom"></div>
+        </div>
+    </div>
+    <div class="end">
+        <img src="../images/namewhite.png" width="300px" height="120px" alt="">
+    </div>
+</body>
+
+</html>
