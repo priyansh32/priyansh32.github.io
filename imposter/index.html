@@ -16,23 +16,28 @@
             height: 100p;
         }
         body {
+            /* background: url(../images/nightsky.jpg); */
+            height: 100vh;
+            overflow: hidden;
+        }
+        .full{
+            width: 100%;
+            height: 100%;
+            background: url(../images/nightsky.jpg) no-repeat center center/cover;
             display: flex;
             justify-content: center;
-            align-items: center;
-            background: url(../images/nightsky.jpg);
-            background-size: cover;
-            height: 100vh;
+            align-items: center;            
         }
-
         .container {
             display: block;
             position: absolute;
-            top: 0px;
-            height: 800px;
+            top: 20px;
+            height: 90vh;
             width: 600px;
             /* overflow: auto; */
+            
         }
-
+        
         .back {
             position: absolute;
             top: 40px;
@@ -44,7 +49,6 @@
             border-bottom: none;
             background-color: #0a8f9f;
         }
-
         .leg {
             position: absolute;
             top: 442px;
@@ -139,6 +143,7 @@
 </head>
 
 <body>
+    <div class="full">
     <div class="container">
         <div class="back">
             <div class="bag"></div>
@@ -154,10 +159,10 @@
                 <div class="borderbottom"></div>
         </div>
         <div class="end">
-            <img src="../images/namewhite.png" width="300px" height="120px" alt="">
+            <img src="../images/namewhite.png" width="250px" height="95px" alt="">
         </div>
     </div>
-    
+</div>  
 </body>
 
 </html>
