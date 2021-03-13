@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <!-- <link rel="stylesheet" font-fa href="../fonts/HARLOWSI.TTF"> -->
+    <style>
+        @font-face {
+            font-family: 'MyWebFont';
+            src: url('../fonts/HARLOWSI.TTF');
+            /* IE9 Compat Modes */
+        }
+
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+
+        body::before {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            content: "";
+            font-size: 100px;
+            position: absolute;
+            /* overflow: hidden; */
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(54, 54, 54);
+            z-index: -1;
+            animation: trans 2s forwards;
+            /* animation-delay: 3s; */
+        }
+
+        @keyframes trans {
+            from {
+                width: 100%;
+            }
+
+            to {
+                width: 0%;
+            }
+        }
+
+        .navbar {
+            display: grid;
+            grid-template-columns: 2fr 7fr 1fr;
+            height: 100px;
+        }
+
+        .nav-elements {
+            height: 100px;
+        }
+
+        #logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 233.6px;
+            height: 73px;
+            margin-right: 20px;
+            animation: slide 2s ease-in-out forwards;
+            opacity: 0;
+            animation-delay: 1.2s;
+        }
+
+        .right {
+            display: flex;
+            /* justify-content: space-evenly; */
+            flex-direction: column;
+            align-items: flex-end;
+            padding: 20px 20px 0px 0px;
+        }
+
+        .ham {
+            background-color: rgb(0, 0, 0);
+            height: 3px;
+            animation: slide 2s ease-in-out forwards;
+            animation-delay: 0.1s;
+            margin: 5px;
+            opacity: 0;
+        }
+
+        #ham1 {
+            width: 40px;
+        }
+
+        #ham2 {
+            width: 30px;
+        }
+
+        #ham3 {
+            width: 20px;
+        }
+
+        @keyframes slide {
+            from {
+                transform: translate(-30px, 0px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translate(0px, 0px);
+                opacity: 1;
+            }
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #intro {
+            font-size: 3rem;
+            text-align: center;
+            font-family: 'MyWebFont', 'Bree Serif';
+        }
+
+        #buttoon {
+            position: fixed;
+            top: 100px;
+            right: 25px;
+            width: 20px;
+            height: 20px;
+            background-color: black;
+        }
+    </style>
+    <title>Welcome</title>
+</head>
+
+<body id="nobat">
+    <div id="buttoon" onclick="darkmode()">
+
+    </div>
+    <div class="navbar">
+        <div class="nav-elements logo"><a href="#"><img src="../images/name.png" id="logo" alt=""></a></div>
+        <din class="nav-elements empty"></din>
+        <div class="nav-elements right">
+            <div class="ham" id="ham1"></div>
+            <div class="ham" id="ham2"></div>
+            <div class="ham" id="ham3"></div>
+        </div>
+    </div>
+    <div class="container">
+        <img src="../images/minecraft.png" alt="">
+        <div id="intro">
+            Hi, I am Priyansh
+        </div>
+    </div>
+</body>
+<script>
+    const hamburger = document.querySelectorAll('.ham');
+    const boi = document.getElementById('nobat');
+    const botton = document.getElementById('buttoon');
+    const intro = document.getElementById('intro');
+    // Change the text of multiple elements with a loop
+    function darkmode() {
+        if (nobat.style.backgroundColor == 'white') {
+            hamburger.forEach(element => {
+                element.style.backgroundColor = 'white';
+            });
+            nobat.style.backgroundColor = 'rgb(21 16 46)';
+            botton.style.backgroundColor = 'white';
+            intro.style.color='white';
+        }
+        else {
+            hamburger.forEach(element => {
+                element.style.backgroundColor = 'black';
+            });
+            nobat.style.backgroundColor = 'white';
+            botton.style.backgroundColor = 'black';
+            intro.style.color='black';
+        }
+    }
+</script>
+
+</html>

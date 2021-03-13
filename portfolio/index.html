@@ -40,7 +40,7 @@
             margin-right: 20px;
         }
 
-        body::before {
+        /* body::before {
             position: absolute;
             top: 0px;
             left: 0px;
@@ -58,8 +58,8 @@
             align-items: center;
             justify-content: center;
             overflow: hidden;
-            /* border-bottom: red solid 10px; */
-        }
+            border-bottom: red solid 10px;
+        } */
 
         @keyframes shutter {
             0% {
@@ -126,56 +126,117 @@
             color: black;
             background-color: rgb(255, 255, 255);
         }
+
+        .gates {
+            position: absolute;
+            height: 100vh;
+            width: 50vw;
+            z-index: 1000;
+            font-size: 201px;
+            overflow: hidden;
+            color: black;
+            background-color: whitesmoke;
+        }
+
+        .gates p {
+            width: 292px;
+            position: absolute;
+            top: 35%;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .shutter1 p {
+            right: -146px;
+        }
+
+        .shutter2 p {
+            left: -146px;
+        }
+
+        .shutter1 {
+            left: 0px;
+            animation: move1 3s forwards ease-in-out;
+            animation-delay: 2s;
+            /* background-color: blueviolet; */
+        }
+
+        .shutter2 {
+            right: 0px;
+            animation: move2 3s forwards ease-in-out;
+            animation-delay: 2s;
+            /* background-color: cadetblue; */
+        }
+
+        @keyframes move1 {
+            from {
+                width: 50%;
+            }
+
+            to {
+                width: 0%;
+            }
+        }
+
+        @keyframes move2 {
+            from {
+                width: 50%;
+            }
+
+            to {
+                width: 0%;
+            }
+        }
     </style>
     <title>Priyansh Patidar</title>
 </head>
-<header>
-    <nav class="navigation">
-        <a href="#"><img src="../images/name.png" id="logo" alt=""></a><br>
-        <div class="sidebar">
-            <a href="#"><img src="../images/insta.png" alt=""></a>
-            <a href="#"><img src="../images/github.png" alt=""></a>
-            <a href="https://wa.link/po2n64" target="_blank"><img src="../images/wp.png" alt=""></a>
-            <a href="mailto: patidar.priyansh936@gmail.com"><img src="../images/Gmail-logo.png" alt=""></a>
-        </div>
-
-    </nav>
-</header>
-<div class="container">
-    <h1 id="typewrite"></h1>
-</div>
-<footer>
-    &#169;Copyright 2021, Designed By Priyansh
-</footer>
-<script>
-    var i = -1;
-    var tw = document.getElementById('typewrite');
-    var txt = ['Lorem Ipsum ', 'Lorem Ipsum']; /* The text */
-    var speed = 50; /* The speed/duration of the effect in milliseconds */
-
-    function typeWriter() {
-        if (i < 2) {
-            var j = 0;
-
-            function pri() {
-                while (j < txt[i].length) {
-                    tw.innerHTML += txt[i].charAt(j);
-                    j++;
-                    setTimeout(() => {
-
-                    }, 500);
-                }
-            }
-
-            i++;
-            setTimeout(() => {
-            }, 500);
-            return pri();
-        }
-    }
-</script>
 
 <body>
+    <div class="gates shutter1">
+        <p>HEY</p>
+    </div>
+    <div class="gates shutter2">
+        <p>HEY</p>
+    </div>
+    <header>
+        <nav class="navigation">
+            <a href="#"><img src="../images/name.png" id="logo" alt=""></a><br>
+            <div class="sidebar">
+                <a href="#"><img src="../images/insta.png" alt=""></a>
+                <a href="#"><img src="../images/github.png" alt=""></a>
+                <a href="https://wa.link/po2n64" target="_blank"><img src="../images/wp.png" alt=""></a>
+                <a href="mailto: patidar.priyansh936@gmail.com"><img src="../images/Gmail-logo.png" alt=""></a>
+            </div>
+
+        </nav>
+    </header>
+    <div class="container">
+        <h1 id="typewrite">I am  </h1>
+    </div>
+    <footer>
+        &#169;Copyright 2021, Designed By Priyansh
+    </footer>
+    <script>
+        var i = 0;
+        var typehere = document.getElementById('typewrite');
+        var text1 = ['Lorem Ipsum ', 'Lorem Ipsum']; /* The text */
+        var speed = 50; /* The speed/duration of the effect in milliseconds */
+        var text2 = "Priyansh";
+        function delay() {
+            setTimeout(() => {
+                console.log("delay succes");
+            }, 200);
+        }
+        function typewrite() {
+
+            if (i < text2.length) {
+                typehere.innerHTML = typehere.innerHTML.slice(0, -1);
+                typehere.innerHTML += text2[i] + "|";
+                i++;
+                setTimeout(typewrite, 300);
+            }
+        }
+        setTimeout(typewrite, 3000);
+    </script>
 </body>
 
 </html>
