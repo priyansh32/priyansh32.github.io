@@ -22,7 +22,8 @@
         }
 
         body {
-            background-color: rgb(255, 255, 255);
+            background-color:white;
+            width: 100vw;
         }
 
         body::before {
@@ -130,12 +131,41 @@
         }
 
         #buttoon {
-            position: fixed;
+            display: flex;
+            justify-content: center;
+            position: absolute;
             top: 100px;
             right: 25px;
-            width: 20px;
-            height: 20px;
+            width: 30px;
+            height: 60px;
+            border-radius: 15px;
+            padding: 2px;
             background-color: black;
+        }
+        #innerb{
+            width: 28px;
+            height: 28px;
+            border-radius: 14px;
+            background-color: white;
+            /* animation: butonmove 1s forwards; */
+        }
+        @keyframes butondown {
+            from{
+                transform: translate(0px,0px);
+                color: white;
+            }
+            to{
+                transform: translate(0px,28px);
+                color: black;
+            }
+        }
+        @keyframes butonup {
+            from{
+                transform: translate(0px,28px);
+            }
+            to{
+                transform: translate(0px,0px);
+            }
         }
     </style>
     <title>Welcome</title>
@@ -143,7 +173,9 @@
 
 <body id="nobat">
     <div id="buttoon" onclick="darkmode()">
+        <div id="innerb">
 
+        </div>
     </div>
     <div class="navbar">
         <div class="nav-elements logo"><a href="#"><img src="../images/name.png" id="logo" alt=""></a></div>
@@ -166,15 +198,20 @@
     const boi = document.getElementById('nobat');
     const botton = document.getElementById('buttoon');
     const intro = document.getElementById('intro');
+    const innerb= document.getElementById('innerb');
+    var i=0;
     // Change the text of multiple elements with a loop
     function darkmode() {
-        if (nobat.style.backgroundColor == 'white') {
+        if (i%2==0) {
             hamburger.forEach(element => {
                 element.style.backgroundColor = 'white';
             });
             nobat.style.backgroundColor = 'rgb(21 16 46)';
             botton.style.backgroundColor = 'white';
             intro.style.color='white';
+            innerb.style.backgroundColor='black'
+            innerb.style.animation='butondown 1s forwards';
+            i++;
         }
         else {
             hamburger.forEach(element => {
@@ -183,6 +220,9 @@
             nobat.style.backgroundColor = 'white';
             botton.style.backgroundColor = 'black';
             intro.style.color='black';
+            innerb.style.backgroundColor='white'
+            innerb.style.animation='butonup 1s forwards';
+            i++;
         }
     }
 </script>
