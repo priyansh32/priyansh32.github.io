@@ -22,6 +22,7 @@
         }
 
         body {
+            transition: background-color 1s ease;
             background-color:white;
             width: 100vw;
         }
@@ -128,6 +129,7 @@
             font-size: 3rem;
             text-align: center;
             font-family: 'MyWebFont', 'Bree Serif';
+            transition: color 1s ease;
         }
 
         #buttoon {
@@ -141,22 +143,22 @@
             border-radius: 15px;
             padding: 2px;
             background-color: black;
+            transition: background-color 1s ease;
         }
         #innerb{
             width: 28px;
             height: 28px;
             border-radius: 14px;
             background-color: white;
+            transition: background-color 1s ease;
             /* animation: butonmove 1s forwards; */
         }
         @keyframes butondown {
             from{
                 transform: translate(0px,0px);
-                color: white;
             }
             to{
                 transform: translate(0px,28px);
-                color: black;
             }
         }
         @keyframes butonup {
