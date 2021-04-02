@@ -1,0 +1,61 @@
+.header{
+    height: 25rem;
+    width: 100%;
+    background-image: url(/images/image-hero-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include breakpoint(phone){
+        background-image: url(/images/image-hero-mobile.jpg);
+    }
+    .navbar{
+        height: 7.5rem;
+        .crowdfundlogo{
+            height: 1.25rem;
+            z-index: 3;
+        }
+        .hamburger{
+            cursor: pointer;
+            display: none;
+            z-index: 3;
+            @include breakpoint(phone){
+                display: block;
+            }
+        }
+        .navlinks{
+            width: 14.0375rem;
+            @include breakpoint(phone){
+                display: none;
+            }
+        }
+        a{
+            font-size: 1rem;
+            font-weight: 500;
+            &:hover{
+                color:rgb(243, 235, 235);
+            }
+        }
+        .menu{
+            position: fixed;
+            top: 6rem;
+            height: 13.25rem;
+            background-color: white;
+            z-index: 11;
+            &__items{
+                height: 4.375rem;
+                padding: 0px 7%;   
+            }
+            a{      
+                display: block;
+                color: black;
+                font-size: 1.3rem;
+                :hover{
+                    color: rgb(14, 13, 13);
+                }
+            }
+            :not(:last-child){
+                border-bottom: 1px solid rgb(233, 233, 233);
+            }
+        }
+    }
+}

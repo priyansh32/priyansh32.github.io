@@ -1,0 +1,641 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Commissioner", sans-serif;
+  background-color: #fafafa;
+  font-weight: 400;
+  line-height: 2;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  max-width: 69.375rem;
+  width: 87.2%;
+  margin: 0 auto;
+}
+
+.content_ainer {
+  width: 86%;
+}
+
+.noscroll {
+  overflow: hidden;
+}
+
+.button {
+  height: 56px;
+  border-radius: 28px;
+  background-color: #147b74;
+  font-weight: 700;
+  cursor: pointer;
+  color: white;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jcsb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-jcc {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-aic {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-fdc {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.border {
+  border: 1px solid #dddddd;
+}
+
+.border_r {
+  border-radius: 0.5rem;
+}
+
+p {
+  color: #383838;
+  font-size: 15px;
+}
+
+.tcent {
+  text-align: center;
+}
+
+.header {
+  height: 25rem;
+  width: 100%;
+  background-image: url(/images/image-hero-desktop.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 37.5em) {
+  .header {
+    background-image: url(/images/image-hero-mobile.jpg);
+  }
+}
+
+.header .navbar {
+  height: 7.5rem;
+}
+
+.header .navbar .crowdfundlogo {
+  height: 1.25rem;
+  z-index: 3;
+}
+
+.header .navbar .hamburger {
+  cursor: pointer;
+  display: none;
+  z-index: 3;
+}
+
+@media (max-width: 37.5em) {
+  .header .navbar .hamburger {
+    display: block;
+  }
+}
+
+.header .navbar .navlinks {
+  width: 14.0375rem;
+}
+
+@media (max-width: 37.5em) {
+  .header .navbar .navlinks {
+    display: none;
+  }
+}
+
+.header .navbar a {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.header .navbar a:hover {
+  color: #f3ebeb;
+}
+
+.header .navbar .menu {
+  position: fixed;
+  top: 6rem;
+  height: 13.25rem;
+  background-color: white;
+  z-index: 11;
+}
+
+.header .navbar .menu__items {
+  height: 4.375rem;
+  padding: 0px 7%;
+}
+
+.header .navbar .menu a {
+  display: block;
+  color: black;
+  font-size: 1.3rem;
+}
+
+.header .navbar .menu a :hover {
+  color: #0e0d0d;
+}
+
+.header .navbar .menu :not(:last-child) {
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.content {
+  max-width: 45.625rem;
+  width: 93%;
+  margin: 0 auto;
+  min-height: 1730px;
+  -webkit-transform: translateY(-5.75rem);
+          transform: translateY(-5.75rem);
+}
+
+.content .box {
+  max-width: 100%;
+  background-color: white;
+}
+
+.content .box .boxend {
+  height: 9rem;
+}
+
+@media (max-width: 30rem) {
+  .content .box .boxend {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.content .box .boxend2 {
+  min-height: 7rem;
+}
+
+@media (max-width: 37.5em) {
+  .content .box .boxend2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-bottom: 1.5rem;
+  }
+  .content .box .boxend2 .reward {
+    margin-top: 10px;
+  }
+  .content .box .boxend2 .price_left {
+    margin-top: 10px;
+  }
+}
+
+.content .box .button {
+  height: 56px;
+  border-radius: 28px;
+  background-color: #147b74;
+  font-weight: 700;
+  cursor: pointer;
+  color: white;
+}
+
+.content .box .button:first-child {
+  width: 210px;
+}
+
+.content .box .button:last-child {
+  width: 190px;
+}
+
+.content .box1 {
+  min-height: 16.875rem;
+  margin-bottom: 24px;
+}
+
+.content .box1 h1 {
+  text-align: center;
+  margin: 0px 0px;
+  font-size: 30px;
+  line-height: 1.3;
+}
+
+.content .box1 .tagline {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.content .box1 .forlogo {
+  height: 64px;
+  -webkit-transform: translateY(-28px);
+          transform: translateY(-28px);
+}
+
+.content .box1 .forlogo .mastercraftlogo {
+  width: 56px;
+  height: 56px;
+}
+
+.content .box1 .backproject {
+  width: 210px;
+}
+
+.content .box1 .bookmark {
+  background-color: #f4f8f9;
+}
+
+.content .box1 .bookmark .bookmarkicon {
+  justify-self: flex-start;
+  width: 56px;
+  height: 56px;
+  border-radius: 28px;
+}
+
+.content .box1 .bookmark p {
+  width: calc(100% - 56px);
+  text-align: center;
+}
+
+@media (max-width: 37.5em) {
+  .content .box1 .bookmark p {
+    display: none;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .content .box1 .bookmark {
+    width: 56px !important;
+  }
+}
+
+.content .box2 {
+  min-height: 12rem;
+  margin-bottom: 1.5rem;
+}
+
+.content .box2__head {
+  width: 100%;
+}
+
+@media (max-width: 37.5em) {
+  .content .box2__head {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.content .box2__headmain {
+  width: 32%;
+  border-right: 1px solid #D9D9D9;
+}
+
+@media (max-width: 37.5em) {
+  .content .box2__headmain {
+    width: unset;
+    min-height: 6rem;
+    border-right: none;
+    border-bottom: 1px solid #D9D9D9;
+  }
+}
+
+.content .box2__headmain span {
+  display: block;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.content .box2 .progressbar {
+  height: 8px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.content .box2 .progressbar .progressfill {
+  background-color: #147b74;
+}
+
+.content .box3 {
+  min-height: 74.75rem;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@media (max-width: 30rem) {
+  .content .box3 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.content .box3 .para {
+  line-height: 2;
+  margin-top: 2rem;
+}
+
+.content .box3 .pricingbox {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-height: 15.625rem;
+  padding-right: 5%;
+  padding-left: 5%;
+  margin-top: 2rem;
+}
+
+.content .box3 .pricingbox .pricehead {
+  min-height: 6rem;
+}
+
+@media (max-width: 37.5em) {
+  .content .box3 .pricingbox .pricehead {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .content .box3 .pricingbox .pricehead :first-child {
+    margin-bottom: 10px;
+  }
+}
+
+.content .box3 .pricingbox .pledge {
+  color: #147b74;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.content .box3 .pricingbox .price {
+  font-weight: 700;
+  color: black;
+  font-size: 2rem;
+}
+
+.content .box3 .pricingbox .reward {
+  background-color: #147b74;
+  color: white;
+}
+
+.content .box3 .disabled .button {
+  background-color: #7a7a7a;
+}
+
+.content .box3 .disabled .button:hover {
+  opacity: 1;
+}
+
+.content .box3 .disabled .pledge {
+  cursor: text;
+}
+
+.disabled {
+  opacity: 0.4;
+}
+
+.overlay {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  visibility: hidden;
+}
+
+.overlay::before {
+  content: "";
+  position: fixed;
+  background-color: black;
+  opacity: 0.5;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 10;
+}
+
+.supportbox {
+  position: fixed;
+  width: 92%;
+  max-width: 33.75rem;
+  height: 28.125rem;
+  background-color: white;
+  z-index: 11;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.supportbox img {
+  width: 90px;
+  height: 90px;
+}
+
+.supportbox h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+}
+
+.supportbox .gotit {
+  width: 110px;
+}
+
+.mobilemenu::before {
+  opacity: 0.7;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
+  background: linear-gradient(black, transparent);
+}
+
+.backprojectoverlay {
+  min-height: 1200px;
+  position: absolute;
+  top: 8rem;
+}
+
+.backprojectoverlay h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.backprojectoverlay .backprojectmodal {
+  position: absolute;
+  max-width: 45.625rem;
+  width: 93%;
+  z-index: 11;
+  padding-top: 3.125rem;
+  padding-bottom: 2rem;
+  min-height: 910px;
+  background: white;
+}
+
+.backprojectoverlay .backprojectmodal .closemodal {
+  cursor: pointer;
+  position: absolute;
+  top: 2rem;
+  right: 1.875rem;
+}
+
+.backprojectoverlay .backprojectmodal .closemodal:hover path {
+  opacity: 1;
+}
+
+@media (max-width: 30rem) {
+  .backprojectoverlay .backprojectmodal .closemodal {
+    top: 2.25rem;
+  }
+}
+
+.backprojectoverlay .backprojectmodal .modalcontainer {
+  min-height: 860px;
+}
+
+@media (max-width: 30rem) {
+  .backprojectoverlay .backprojectmodal {
+    padding-top: 1.6rem;
+  }
+}
+
+.backprojectoverlay .backprojectmodal .backprojectmodalboxes {
+  min-height: 10rem;
+  margin-top: 1.8rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 37.5em) {
+  .backprojectoverlay .backprojectmodal .backprojectmodalboxes {
+    padding-top: 1.5rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .backprojectoverlay .backprojectmodal .backprojectmodalboxes .pl1 {
+    display: none;
+  }
+}
+
+.backprojectoverlay .backprojectmodal .backprojectmodalboxes .pl2 {
+  height: 3rem;
+  display: none;
+}
+
+@media (max-width: 37.5em) {
+  .backprojectoverlay .backprojectmodal .backprojectmodalboxes .pl2 {
+    display: block;
+  }
+}
+
+.backprojectoverlay .backprojectmodal .backprojectmodalboxes h4 {
+  padding-right: 0.7rem;
+}
+
+@media (max-width: 37.5em) {
+  .backprojectoverlay .backprojectmodal .backprojectmodalboxes h4 {
+    width: 100%;
+  }
+}
+
+.backprojectoverlay .backprojectmodal .backprojectmodalboxes .pricehead {
+  min-height: 4.5rem;
+}
+
+@media (max-width: 37.5em) {
+  .backprojectoverlay .backprojectmodal .backprojectmodalboxes .pricehead {
+    min-height: 3rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.backprojectoverlay .backprojectmodal .backprojectmodalboxes .pledge {
+  color: #3cb4ac;
+  font-weight: 700;
+}
+
+.backprojectoverlay .backprojectmodal .backprojectmodalboxes .price {
+  font-weight: 700;
+  color: black;
+  font-size: 2rem;
+}
+
+.backprojectoverlay .backprojectmodal .backprojectmodalboxes .reward {
+  background-color: #147b74;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
