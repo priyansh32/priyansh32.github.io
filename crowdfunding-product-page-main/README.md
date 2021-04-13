@@ -39,8 +39,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/priyansh32/priyansh32.github.io/tree/main/crowdfunding-product-page-main)
-- Live Site URL: [Add live site URL here](https://priyansh32.github.io/crowdfunding-product-page-main/)
+- Solution URL: [View Code on github](https://github.com/priyansh32/priyansh32.github.io/tree/main/crowdfunding-product-page-main)
+- Live Site URL: [Click here](https://priyansh32.github.io/crowdfunding-product-page-main/)
 
 ### Built with
 
