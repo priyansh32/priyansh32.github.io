@@ -111,7 +111,7 @@ p {
 .header {
   height: 25rem;
   width: 100%;
-  background-image: url(images/image-hero-desktop.jpg);
+  background-image: url(../../images/image-hero-desktop.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -119,7 +119,7 @@ p {
 
 @media (max-width: 37.5em) {
   .header {
-    background-image: url(images/image-hero-mobile.jpg);
+    background-image: url(../../images/image-hero-mobile.jpg);
   }
 }
 
@@ -638,3 +638,4 @@ p {
   background-color: #147b74;
   color: white;
 }
+/*# sourceMappingURL=style.css.map */

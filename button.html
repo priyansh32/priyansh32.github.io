@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .button {
+            display: flex;
+            font-size: 30px;
+            font-family: cursive;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            height: 80px;
+            width: 200px;
+            border: blue solid 2px;
+            padding: 0px;
+            box-shadow: 0px 0px 0px blue;
+        }
+
+        .button::before {
+            z-index: -1;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(68, 79, 208);
+            clip-path: circle(50px at 0% 100%);
+            margin: 0px;
+            animation: path2 1s ease-in-out;
+        }
+
+        .button::after {
+            z-index: -1;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(68, 79, 208);
+            clip-path: circle(50px at 100% 0%);
+            margin: 0px;
+            transition: all 1s;
+            animation: path1 1s ease-in-out;
+        }
+
+        @keyframes path1 {
+            0% {
+                clip-path: circle(0px at 100% 0%);
+            }
+
+            100% {
+                clip-path: circle(150px at 100% 0%);
+            }
+        }
+
+        @keyframes path2 {
+            0% {
+                clip-path: circle(0px at 0% 100%);
+            }
+
+            100% {
+                clip-path: circle(150px at 0% 100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="button">
+            BUTTON
+        </div>
+    </div>
+</body>
+
+</html>
