@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="../stylesheets/style.css"> -->
+    <link rel="icon" href="./images/telegram.svg">
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
 
     <style>
@@ -106,14 +107,19 @@
         .container {
             display: flex;
             align-items: center;
-            justify-content: center;
             height: 50vh;
+            width: 31.25rem;
+            margin: auto;
         }
 
         /* .container h1 {
             width: 20vw;
 
         } */
+        header {
+            position: relative;
+            box-shadow: 2px 0px 25px whitesmoke;
+        }
 
         footer {
             position: absolute;
@@ -129,8 +135,11 @@
 
         .gates {
             position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             height: 100vh;
-            width: 50vw;
+            width: 100vw;
             z-index: 1000;
             font-size: 201px;
             overflow: hidden;
@@ -145,35 +154,38 @@
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         }
 
-        .shutter1 p {
+        /* .shutter1 p {
             right: -146px;
         }
 
         .shutter2 p {
             left: -146px;
-        }
+        } */
 
         .shutter1 {
             left: 0px;
-            animation: move1 3s forwards ease-in-out;
+            clip-path: none;
+            animation: move1 2s forwards ease-in-out;
             /* animation-delay: 2s; */
             /* background-color: blueviolet; */
         }
 
         .shutter2 {
             right: 0px;
-            animation: move2 3s forwards ease-in-out;
+            /* animation: move2 3s forwards ease-in-out; */
             /* animation-delay: 2s; */
             /* background-color: cadetblue; */
         }
 
         @keyframes move1 {
             from {
-                width: 50%;
+                clip-path: circle(100vw at 100% 0%);
+                opacity: 1;
             }
 
             to {
-                width: 0%;
+                clip-path: circle(0vw at 100% 0%);
+                opacity: 0.2;
             }
         }
 
@@ -194,9 +206,9 @@
     <div class="gates shutter1">
         <p>HEY</p>
     </div>
-    <div class="gates shutter2">
+    <!-- <div class="gates shutter2">
         <p>HEY</p>
-    </div>
+    </div> -->
     <header>
         <nav class="navigation">
             <a href="#"><img src="./images/name.png" id="logo" alt=""></a><br>
@@ -216,47 +228,46 @@
         &#169;Copyright 2021, Designed By Priyansh
     </footer>
     <script>
-        // var i = 0;
         var typehere = document.getElementById('typewrite');
-        // // var text1 = ['Lorem Ipsum ', 'Lorem Ipsum']; /* The text */
-        // var speed = 50; /* The speed/duration of the effect in milliseconds */
-        var text2 = ["Priyansh ", "Web Developer ", "Enthusiast Photographer ", "Indian"];
-        // function delay() {
-        //     setTimeout(() => {
-        //         console.log("delay succes");
-        //     }, 200);
-        // }
-        // function typewrite() {
-
-        //     if (i < text2[0].length) {
-        //         typehere.innerHTML = typehere.innerHTML.slice(0, -1);
-        //         typehere.innerHTML += text2[0][i] + "|";
-        //         i++;
-        //         setTimeout(typewrite, 300);
-        //     }
-        // }
-        // setTimeout(typewrite, 3000);
+        var text2 = ["Priyansh ", "Web Developer ", "Enthusiast Photographer ", "Indian "];
+        // var i = 0;
         var temptime = 0;
-        var gap = 300;
-
+        var gap = 200;
         function timercount() {
             var time = temptime + gap;
             temptime = time;
             return time;
         }
-        function delay(i, j) {
+
+        function diplaytext(i, j) {
             setTimeout(() => {
                 typehere.innerHTML = typehere.innerHTML.slice(0, -1);
-                typehere.innerHTML += text2[j][i] + "|";
+                typehere.innerHTML += text2[i][j] + "|";
             }, timercount())
             return;
         }
-        for (let j = 0; j < text2.length; j++) {
-            for (let i = 0; i < text2[j].length; i++) {
-                delay(i, j);
-                // debugger;
+        function deletetext(i, j) {
+            setTimeout(() => {
+                typehere.innerHTML = typehere.innerHTML.slice(0, -2);
+                typehere.innerHTML += "|";
+                console.log('delete funtion running')
+                if (i == (text2.length - 1) && j == 0) {
+                    temptime = 0;
+                    textloop();
+                }
+            }, timercount())
+        }
+        function textloop() {
+            for (let i = 0; i < text2.length; i++) {
+                for (let j = 0; j < text2[i].length; j++) {
+                    diplaytext(i, j);
+                }
+                for (let j = text2[i].length - 1; j >= 0; j--) {
+                    deletetext(i, j);
+                }
             }
         }
+        textloop();
     </script>
 </body>
 
