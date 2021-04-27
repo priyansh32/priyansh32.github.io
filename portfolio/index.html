@@ -156,14 +156,14 @@
         .shutter1 {
             left: 0px;
             animation: move1 3s forwards ease-in-out;
-            animation-delay: 2s;
+            /* animation-delay: 2s; */
             /* background-color: blueviolet; */
         }
 
         .shutter2 {
             right: 0px;
             animation: move2 3s forwards ease-in-out;
-            animation-delay: 2s;
+            /* animation-delay: 2s; */
             /* background-color: cadetblue; */
         }
 
@@ -199,43 +199,64 @@
     </div>
     <header>
         <nav class="navigation">
-            <a href="#"><img src="../images/name.png" id="logo" alt=""></a><br>
+            <a href="#"><img src="./images/name.png" id="logo" alt=""></a><br>
             <div class="sidebar">
-                <a href="#"><img src="../images/insta.png" alt=""></a>
-                <a href="#"><img src="../images/github.png" alt=""></a>
-                <a href="https://wa.link/po2n64" target="_blank"><img src="../images/wp.png" alt=""></a>
-                <a href="mailto: patidar.priyansh936@gmail.com"><img src="../images/Gmail-logo.png" alt=""></a>
+                <a href="#"><img src="./images/insta.png" alt=""></a>
+                <a href="#"><img src="./images/github.png" alt=""></a>
+                <a href="https://wa.link/po2n64" target="_blank"><img src="./images/wp.png" alt=""></a>
+                <a href="mailto: patidar.priyansh936@gmail.com"><img src="./images/Gmail-logo.png" alt=""></a>
             </div>
 
         </nav>
     </header>
     <div class="container">
-        <h1 id="typewrite">I am  </h1>
+        <h1 id="typewrite">I am &nbsp;</h1>
     </div>
     <footer>
         &#169;Copyright 2021, Designed By Priyansh
     </footer>
     <script>
-        var i = 0;
+        // var i = 0;
         var typehere = document.getElementById('typewrite');
-        var text1 = ['Lorem Ipsum ', 'Lorem Ipsum']; /* The text */
-        var speed = 50; /* The speed/duration of the effect in milliseconds */
-        var text2 = "Priyansh";
-        function delay() {
-            setTimeout(() => {
-                console.log("delay succes");
-            }, 200);
-        }
-        function typewrite() {
+        // // var text1 = ['Lorem Ipsum ', 'Lorem Ipsum']; /* The text */
+        // var speed = 50; /* The speed/duration of the effect in milliseconds */
+        var text2 = ["Priyansh ", "Web Developer ", "Enthusiast Photographer ", "Indian"];
+        // function delay() {
+        //     setTimeout(() => {
+        //         console.log("delay succes");
+        //     }, 200);
+        // }
+        // function typewrite() {
 
-            if (i < text2.length) {
+        //     if (i < text2[0].length) {
+        //         typehere.innerHTML = typehere.innerHTML.slice(0, -1);
+        //         typehere.innerHTML += text2[0][i] + "|";
+        //         i++;
+        //         setTimeout(typewrite, 300);
+        //     }
+        // }
+        // setTimeout(typewrite, 3000);
+        var temptime = 0;
+        var gap = 300;
+
+        function timercount() {
+            var time = temptime + gap;
+            temptime = time;
+            return time;
+        }
+        function delay(i, j) {
+            setTimeout(() => {
                 typehere.innerHTML = typehere.innerHTML.slice(0, -1);
-                typehere.innerHTML += text2[i] + "|";
-                i++;
-                setTimeout(typewrite, 300);
+                typehere.innerHTML += text2[j][i] + "|";
+            }, timercount())
+            return;
+        }
+        for (let j = 0; j < text2.length; j++) {
+            for (let i = 0; i < text2[j].length; i++) {
+                delay(i, j);
+                // debugger;
             }
         }
-        setTimeout(typewrite, 3000);
     </script>
 </body>
 
