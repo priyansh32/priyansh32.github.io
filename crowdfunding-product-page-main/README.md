@@ -97,7 +97,7 @@ const proudOfThisFunc = () => {
 
 - Website - [Priyansh Patidar](https://www.your-site.com)
 - Frontend Mentor - [@priyansh32](https://www.frontendmentor.io/profile/priyansh32)
-- Twitter - [@PriyanshPatid13](https://www.twitter.com/PriyanshPatid13)
+- Twitter - [@priyansh_32](https://www.twitter.com/priyansh_32)
 - Instagram - [@priyansh_patidar132](https://www.instagram.com/priyansh_patidar132/)
 
 ## Acknowledgments
