@@ -33,6 +33,7 @@ body {
   transform-style: preserve-3d;
   perspective: 0rem;
   animation: boom 15s infinite linear;
+  transform-origin: 50% 50% var(--ncubeside);
 }
 
 @keyframes boom {
