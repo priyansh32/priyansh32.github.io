@@ -82,7 +82,10 @@ body {
   transform: rotateX(90deg) rotateY(90deg)
     translate3d(0, var(--ncubeside), var(--cubeside));
 }
-
+table {
+  width: 100%;
+  height: 100%;
+}
 table,
 th,
 td {
