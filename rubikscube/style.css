@@ -1,0 +1,111 @@
+:root {
+  --cubeside: 6.25rem;
+  --ncubeside: -6.25rem;
+  --lcubeside: -12.5rem;
+}
+body {
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 93vh;
+  background-color: rgb(221, 221, 221);
+}
+
+.name {
+  position: absolute;
+  top: 10vh;
+}
+
+.main {
+  width: 12.5rem;
+  height: 12.5rem;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 0rem;
+  animation: boom 15s infinite linear;
+}
+
+@keyframes boom {
+  to {
+    transform: rotateX(360deg) rotateZ(360deg) rotateY(360deg);
+  }
+}
+
+.face {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  perspective: 500px;
+}
+
+.face1 {
+  background-color: #ffa500;
+}
+
+.face2 {
+  background-color: #0000ff;
+  transform: translate3d(0, 0, var(--lcubeside));
+}
+
+.face3 {
+  background-color: #ffffff;
+  transform: rotateX(90deg) translate3d(0, var(--ncubeside), var(--ncubeside));
+}
+
+.face4 {
+  background-color: #ffff00;
+  transform: rotateX(90deg) translate3d(0, var(--ncubeside), var(--cubeside));
+}
+
+.face5 {
+  background-color: #008000;
+  transform: rotateX(90deg) rotateY(90deg)
+    translate3d(0, var(--ncubeside), var(--ncubeside));
+}
+
+.face6 {
+  background-color: #ff0000;
+  transform: rotateX(90deg) rotateY(90deg)
+    translate3d(0, var(--ncubeside), var(--cubeside));
+}
+
+table,
+th,
+td {
+  border: 4px solid rgb(0, 0, 0);
+  border-collapse: collapse;
+}
+footer {
+  text-align: center;
+  height: 7vh;
+  background: rgb(221, 221, 221);
+}
+@media (max-width: 25rem) {
+  .main {
+    width: 8rem;
+    height: 8rem;
+  }
+  :root {
+    --cubeside: 4rem;
+    --ncubeside: -4rem;
+    --lcubeside: -8rem;
+  }
+  table,
+  th,
+  td {
+    border: 3px solid rgb(0, 0, 0);
+  }
+}
