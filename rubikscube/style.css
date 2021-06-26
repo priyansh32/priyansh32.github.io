@@ -18,8 +18,8 @@ body {
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 93vh;
-  background-color: rgb(221, 221, 221);
+  height: 100vh;
+  background-color: #e7f0f3;
 }
 
 .name {
@@ -54,39 +54,49 @@ body {
   top: 0%;
   left: 0%;
   perspective: 500px;
+  background-color: black;
 }
 .box {
-  border: black 3px solid;
+  border: black 2px solid;
+  border-radius: 5px;
 }
-.face1 {
+.face1 .box {
   background-color: #ffa500;
 }
-
 .face2 {
-  background-color: #0000ff;
   transform: translate3d(0, 0, var(--lcubeside));
 }
-
+.face2 .box {
+  background-color: #0000ff;
+}
 .face3 {
-  background-color: #ffffff;
   transform: rotateX(90deg) translate3d(0, var(--ncubeside), var(--ncubeside));
+}
+.face3 .box {
+  background-color: #ffffff;
 }
 
 .face4 {
-  background-color: #ffff00;
   transform: rotateX(90deg) translate3d(0, var(--ncubeside), var(--cubeside));
+}
+.face4 .box {
+  background-color: #ffff00;
 }
 
 .face5 {
-  background-color: #008000;
   transform: rotateX(90deg) rotateY(90deg)
     translate3d(0, var(--ncubeside), var(--ncubeside));
 }
+.face5 .box {
+  background-color: #008000;
+}
 
 .face6 {
-  background-color: #ff0000;
   transform: rotateX(90deg) rotateY(90deg)
     translate3d(0, var(--ncubeside), var(--cubeside));
+}
+.face6 .box {
+  background-color: #ff0000;
 }
 
 footer {
